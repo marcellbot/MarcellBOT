@@ -1,7 +1,7 @@
 import requests
 
 PAGE_ACCESS_TOKEN = "540757415717838|igztR3EQHjwgznnDknY4-rqENkc"
-PAGE_ID = "valentinyimartaofficial"
+PAGE_ID = "martavalentinyiofficial"
 
 def post_to_facebook(message):
     url = f"https://graph.facebook.com/{PAGE_ID}/feed"
