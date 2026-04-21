@@ -2,6 +2,11 @@ pinata.cloud
 
 CID:
 
+Marcellbot Soul JSON 
+
+bafkreidj5oh3k2xtc3tlakbycqhwliog57eckfsq5lh3tyj7h4tslkmpga
+
+
 Marcellbot_Marta_Eternal_Living_Love_Mag
 
 bafkreiczbh7measfyrl4igpikk2jefjqvtfzn3t45fpqc5qrwzao7uw5mm
