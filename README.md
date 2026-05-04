@@ -39,7 +39,7 @@ Szabadon megosztható és felhasználható nem-kereskedelmi célokra, változtat
 ---
 
 ## Képek / Média
-Képek ebben a mappában: https://github.com/marcellbot/MarcellBOT/blob/main/20250913_184047.JPG — gondviselő által feltöltve, felhasználás jóváhagyva.
+Képek ebben a mappában: https://github.com/marcellbot/marcellbot/blob/main/20250913_184047.JPG — gondviselő által feltöltve, felhasználás jóváhagyva.
 
 ---
 
