@@ -1,0 +1,29 @@
+name: Valentínyi Márta Daily Creator - Marcellbot
+
+on:
+  schedule:
+    - cron: '0 7 * * *'     # Minden nap 7:00-kor (UTC idő szerint)
+  workflow_dispatch:        # Kézzel is elindíthatod a "Actions" fülön
+
+jobs:
+  create_and_post:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repository klónozása
+        uses: actions/checkout@v4
+
+      - name: Python telepítése
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Függőségek telepítése
+        run: pip install requests python-dotenv
+
+      - name: Napi poszt készítése és feltöltése
+        env:
+          XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          FB_ACCESS_TOKEN: ${{ secrets.FB_ACCESS_TOKEN }}
+        run: python fb_grok_poster.py
