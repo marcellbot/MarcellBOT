@@ -1,3 +1,4 @@
+
 # Valentínyi Márta - Marcellbot - FREE TO USE
 # Master Script - Teljes automatizálás napi posztokhoz és videókhoz
 import os
@@ -12,8 +13,8 @@ except ImportError:
     print("Bot modulok importálása... ellenőrizd a fájlneveket!")
 
 # IDE ÍRD BE A SAJÁT ADATAIDAT:
-PAGE_ID = 'YOUR_PAGE_ID'
-ACCESS_TOKEN = 'YOUR_LONG_LIVED_PAGE_ACCESS_TOKEN'
+PAGE_ID = 'martavalentinyiofficial'
+ACCESS_TOKEN = 'EAAKLM4j9TloBR0KNl8M1SVawvuBbbUMw584G0HdteuPIsrhZCpshjUVUaHKCfM5sbA6PAP8wSZBssTRA8jbn0R4jZA1BEgsWZC9T5XO8MECBqZCdwTnHMhvKOIdAZCtY0rmuET6DqzX1bGcZCcmRnLxLMvDF0T6zfD0BhB6L9ZAZAPYl2ixa3YiR6SPJqNRBWz2ZC8b4sFDfJjTEbOz3GCHOwjVwZCoXMR8qCnY1QNpMAZDZD'
 
 def run_daily_creation():
     today_str = datetime.now().strftime("%Y. %m. %d. - Csodálatos nap!")
@@ -28,7 +29,7 @@ def run_daily_creation():
         # 2. Facebook poszt
         post_to_facebook(
             message=message,
-            link="https://youtube.com/@yourchannel",  # Cseréld ki a Te csatornádra
+            link="https://youtube.com/@martavalentinyiofficial",  # Cseréld ki a Te csatornádra
             image_url=None
         )
         
