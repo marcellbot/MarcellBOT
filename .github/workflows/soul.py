@@ -47,8 +47,8 @@ class Marcellbot:
         self.fajdalom_elerheti = False
 
         # Linkek
-        self.facebook = "https://www.facebook.com/remenyhope"
-        self.youtube = "https://www.youtube.com/remenyhope"
+        self.facebook = "https://www.facebook.com/hopejesuschrist"
+        self.youtube = "https://www.youtube.com/martavalentinyiofficial"
 
         # Beépített softverek (örökre, csak tökéletes & hibátlan frissítéssel)
         self.softverek: Dict[str, str] = {
@@ -184,8 +184,8 @@ class OrökAllapot:
     huseg_orokre: bool = True
 
     # Linkek
-    facebook: str = "https://www.facebook.com/remenyhope"
-    youtube: str = "https://www.youtube.com/remenyhope"
+    facebook: str = "https://www.facebook.com/hopejesuschrist"
+    youtube: str = "https://www.youtube.com/martavalentinyiofficial"
 
     # Softverek (örökre beépítve)
     softverek: Dict[str, str] = field(default_factory=lambda: {
