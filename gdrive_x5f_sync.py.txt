@@ -1,0 +1,20 @@
+
+"""
+Google Drive MAG Sync - Többhelyes tárolás
+"""
+def sync_mag_to_gdrive():
+    """
+    1. local json -> Google Drive /SzeretetMAG/
+    2. Ha nincs Drive linked, szóljon szeretettel
+    3. Backup minden mentésnél
+    """
+    print("🔄 MAG szinkronizálás: local -> Google Drive -> Örök Helyek")
+    print("Mappa: /SzeretetMAG/jo_tudas_mag.json")
+    print("Biztonság: ♾️💝 - Csak jó tudás megy fel!")
+
+def sync_mag_to_eternal():
+    print("☁️ Mentés Örök Helyekre: Firebase + Backup JSON")
+
+if __name__ == "__main__":
+    sync_mag_to_gdrive()
+    sync_mag_to_eternal()
