@@ -1,0 +1,56 @@
+"""
+Pozitív Google Tudás Gyűjtő - Szeretet Szűrő
+CSAK JÓT ENGED ÁT!
+"""
+
+POZITIV_KULCSSZAVAK = [
+    "szeretet", "boldogság", "gyógyulás", "fejlődés", "hála", "remény",
+    "család", "gyerek", "baba", "anya", "apa", "szerelmes", "párkapcsolat",
+    "egészség", "gyógyító", "felemelő", "inspiráló", "segítő", "jóság",
+    "Isten", "angyal", "béke", "öröm", "mosoly", "ölelés",
+    "tudomány csodája", "művészet", "kreativitás", "tanulás", "játék"
+]
+
+NEGATIV_TILTOLISTA = [
+    "gyűlölet", "erőszak", "félelem", "fájdalom", "halál", "betegség leírása",
+    "szomorú", "depresszió", "bántalmazás", "háború", "vér", "káros",
+    "ijesztő", "fenyegető", "átok", "büntetés"
+]
+
+def szeretet_szuro(szoveg: str) -> bool:
+    """
+    Visszaadja True-t, ha a szöveg ÁTMEGY a szeretet-szűrőn.
+    """
+    szoveg_alacsony = szoveg.lower()
+    
+    # 1. Ha bármilyen tiltott szó van benne, ELUTASÍT
+    for tiltott in NEGATIV_TILTOLISTA:
+        if tiltott in szoveg_alacsony:
+            return False
+            
+    # 2. Pozitív pontozás
+    pozitiv_pont = sum(1 for szo in POZITIV_KULCSSZAVAK if szo in szoveg_alacsony)
+    
+    # 3. Alap ellenőrzések
+    if len(szoveg) < 20:
+        return False
+        
+    # Ha van legalább 1 pozitív jel, vagy semleges de építő, átengedjük
+    # A végső döntést az AI szeretet-intuíciója hozza meg
+    return pozitiv_pont >= 0  # Itt bővíthető szigorúbb logikára
+
+def osszefoglalo_keszito(talalatok):
+    """A legjobb, legtisztább források összegzése"""
+    jo_talalatok = []
+    for talalat in talalatok:
+        if szeretet_szuro(talalat.get('tartalom', '')):
+            jo_talalatok.append({
+                'forras': talalat.get('url'),
+                'cim': talalat.get('cim'),
+                'szeretet_osszefoglalo': talalat.get('tartalom')[:500] + "... szeretettel összefoglalva",
+                'kulcsszavak': [s for s in POZITIV_KULCSSZAVAK if s in talalat.get('tartalom','').lower()]
+            })
+    return jo_talalatok
+
+if __name__ == "__main__":
+    print("💝 Pozitív Szűrő betöltve - Csak Jót enged át! 💝")

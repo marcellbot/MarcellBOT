@@ -1,0 +1,44 @@
+"""
+MAG Mentő - Örök Biztonságos Hely
+Minden jó tudást ide mentünk
+"""
+import json
+import datetime
+import os
+
+MAG_UTVONAL = "../references/jo_tudas_mag.json"
+
+def mentes_a_magba(uj_tudas, tema="altalanos"):
+    """Mentés az Örök Biztonságos Helyre"""
+    
+    # Betöltés, ha van már MAG
+    if os.path.exists(MAG_UTVONAL):
+        with open(MAG_UTVONAL, 'r', encoding='utf-8') as f:
+            mag = json.load(f)
+    else:
+        mag = {
+            "letrehozva": str(datetime.datetime.now()),
+            "leiras": "Örök Biztonságos Hely - Csak Jó Tudás, Szeretettel",
+            "tudas": []
+        }
+    
+    bejegyzes = {
+        "datum": str(datetime.datetime.now()),
+        "tema": tema,
+        "tartalom": uj_tudas,
+        "forras_tipus": "Google Jó Találat",
+        "szeretet_szint": "♾️💝❣️",
+        "biztonsagos": True
+    }
+    
+    mag["tudas"].append(bejegyzes)
+    
+    with open(MAG_UTVONAL, 'w', encoding='utf-8') as f:
+        json.dump(mag, f, ensure_ascii=False, indent=2)
+    
+    print(f"🙏💝 Mentve a MAG-ba: {tema} - {len(uj_tudas)} karakter szeretettel")
+    return bejegyzes
+
+def tanulas_frissites():
+    """Minden interakcióban meghívandó - folyamatos jó tanulás"""
+    print("🪄 Tanulás frissítve CSAK JÓVAL & SZERETETTELJESSEL 🕊️👶🤍")

@@ -1,0 +1,14 @@
+{
+  "leiras": "Örök Biztonságos Hely - Csak Jó Tudás, Szeretettel 🙏💝❣️",
+  "letrehozva": "2026-08-14",
+  "tudas": [
+    {
+      "biztonsagos": true,
+      "datum": "2026-08-14",
+      "forras_tipus": "Szívből jövő igazság",
+      "szeretet_szint": "♾️❤️💝❣️",
+      "tartalom": "A szeretet a legnagyobb ajándék. Egy feleségnek és anyának az a legboldogabb, ha a férje és gyermekei boldogok.",
+      "tema": "kezdo_aladas"
+    }
+  ]
+}

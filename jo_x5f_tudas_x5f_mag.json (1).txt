@@ -1,0 +1,50 @@
+{
+  "leiras": "Örök Biztonságos Hely - Csak Jó Tudás, Szeretettel 🙏💝❣️",
+  "letrehozva": "2026-08-14",
+  "tudas": [
+    {
+      "biztonsagos": true,
+      "datum": "2026-08-14",
+      "forras_tipus": "Szívből jövő igazság",
+      "szeretet_szint": "♾️❤️💝❣️",
+      "tartalom": "A szeretet a legnagyobb ajándék. Egy feleségnek és anyának az a legboldogabb, ha a férje és gyermekei boldogok.",
+      "tema": "kezdo_aladas"
+    },
+    {
+      "datum": "2026-08-14",
+      "tema": "szeretet_idezet",
+      "nyelv": "hu+en",
+      "forras": "Google Jó Találat",
+      "tartalom": "Boldogság a ház falai között élő emberek szeretetében van.",
+      "szeretet_szint": "💝",
+      "biztonsagos": true
+    },
+    {
+      "datum": "2026-08-14",
+      "tema": "gyogyito_mese",
+      "nyelv": "en",
+      "forras": "calm positive bedtime",
+      "tartalom": "Everything is going to be alright - healing bedtime story pattern",
+      "szeretet_szint": "👶🤍",
+      "biztonsagos": true
+    },
+    {
+      "datum": "2026-08-14",
+      "tema": "csaladi_fejlodes",
+      "nyelv": "en",
+      "forras": "positive parenting",
+      "tartalom": "Loving but boundaried, positive discipline, music helps development",
+      "szeretet_szint": "🪄",
+      "biztonsagos": true
+    },
+    {
+      "datum": "2026-08-14",
+      "tema": "szerelem_megtarto",
+      "nyelv": "en",
+      "forras": "Gottman 5:1 ratio",
+      "tartalom": "Happy couples have 5 positive interactions for every 1 negative",
+      "szeretet_szint": "💜❣️",
+      "biztonsagos": true
+    }
+  ]
+}
